@@ -36,9 +36,7 @@ namespace api
 
            if (!string.IsNullOrWhiteSpace(pgConn))
                conStr = HerokuPGParser.ConnectionHelper.BuildExpectedConnectionString(pgConn);
-            services.AddDbContext<AppDb>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-
+          
             services.AddScoped<TodosService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
