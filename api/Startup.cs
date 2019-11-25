@@ -70,7 +70,9 @@ namespace api
             {
                 if (serviceScope.ServiceProvider.GetService<AppDb>() == null) return;
                 var ctx = serviceScope.ServiceProvider.GetService<AppDb>();
+                Console.WriteLine("Preparing to migrate the DB");
                 new DatabaseFacade(ctx).Migrate();
+                System.Console.WriteLine(`DB should have been updated with schema`);
             }
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
