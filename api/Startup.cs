@@ -1,15 +1,21 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
+using System.Net;
 using api.Middleware;
 using api.Model;
 using api.Servcies;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Microsoft.OpenApi.Models;
 
 
@@ -25,12 +31,14 @@ namespace api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-          var conStr = Configuration.GetConnectionString("DefaultConnection");
-           var pgConn = Environment.GetEnvironmentVariable("DATABASE_URL");
+            var conStr = Configuration.GetConnectionString("DefaultConnection");
+            var pgConn = Environment.GetEnvironmentVariable("DATABASE_URL");
 
-           if (!string.IsNullOrWhiteSpace(pgConn))
-               conStr = HerokuPGParser.ConnectionHelper.BuildExpectedConnectionString(pgConn);
-          
+            if (!string.IsNullOrWhiteSpace(pgConn))
+                conStr = HerokuPGParser.ConnectionHelper.BuildExpectedConnectionString(pgConn);
+
+            services.AddDbContext<AppDb>(options =>options.UseNpgsql(conStr));
+
             services.AddScoped<TodosService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
@@ -58,25 +66,23 @@ namespace api
                 var mem = proc.WorkingSet64;
                 var cpu = proc.TotalProcessorTime;
                 Console.WriteLine("--------------------------------");
-                Console.WriteLine("My process used working set {0:n3} MB of working set and CPU {1:n} msec", mem / (1024.0 * 1000) , cpu.TotalMilliseconds);
+                Console.WriteLine("My process used working set {0:n3} MB of working set and CPU {1:n} msec", mem / (1024.0 * 1000), cpu.TotalMilliseconds);
                 Console.WriteLine("--------------------------------");
             });
 
 
             app.UseMvc();
 
-              // update database schema
+            // update database schema           
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 if (serviceScope.ServiceProvider.GetService<AppDb>() == null) return;
                 var ctx = serviceScope.ServiceProvider.GetService<AppDb>();
-                Console.WriteLine("Preparing to migrate the DB");
                 new DatabaseFacade(ctx).Migrate();
-                System.Console.WriteLine("DB should have been updated with schema");
             }
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
-                app.UseSwagger();
+            app.UseSwagger();
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
             // specifying the Swagger JSON endpoint.
