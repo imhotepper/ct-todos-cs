@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "HerokuPGParser/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/HerokuPGParser.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/HerokuPGParser.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4544,6 +4553,18 @@
     }
   },
   "libraries": {
+    "HerokuPGParser/1.0.2": {
+      "sha512": "tkKn0u5GrJT+aVdb0SDxE0XeSTmAFZmAelx6+l0D0neD5FqbhNKauvmZD41qyDm9nJIg4nKNLidY5km6ifEEDQ==",
+      "type": "package",
+      "path": "herokupgparser/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "herokupgparser.1.0.2.nupkg.sha512",
+        "herokupgparser.nuspec",
+        "lib/netcoreapp2.0/HerokuPGParser.dll"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -12342,6 +12363,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "HerokuPGParser >= 1.0.2",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
@@ -12357,11 +12379,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/api.csproj",
+      "projectUniqueName": "/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/api.csproj",
       "projectName": "api",
-      "projectPath": "/Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/api.csproj",
+      "projectPath": "/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/api.csproj",
       "packagesPath": "/Users/cv48lu/.nuget/packages/",
-      "outputPath": "/Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/obj/",
+      "outputPath": "/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -12389,6 +12411,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "HerokuPGParser": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",

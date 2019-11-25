@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/api.csproj": {}
+    "/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/api.csproj": {}
   },
   "projects": {
-    "/Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/api.csproj": {
+    "/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/api.csproj",
+        "projectUniqueName": "/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/api.csproj",
         "projectName": "api",
-        "projectPath": "/Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/api.csproj",
+        "projectPath": "/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/api.csproj",
         "packagesPath": "/Users/cv48lu/.nuget/packages/",
-        "outputPath": "/Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/obj/",
+        "outputPath": "/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -39,6 +39,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "HerokuPGParser": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",

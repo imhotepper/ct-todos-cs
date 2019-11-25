@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.2": {
       "api/1.0.0": {
         "dependencies": {
+          "HerokuPGParser": "1.0.2",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -36,6 +37,17 @@
         },
         "compile": {
           "api.dll": {}
+        }
+      },
+      "HerokuPGParser/1.0.2": {
+        "runtime": {
+          "lib/netcoreapp2.0/HerokuPGParser.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/HerokuPGParser.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore/2.2.4": {
@@ -3363,6 +3375,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "HerokuPGParser/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tkKn0u5GrJT+aVdb0SDxE0XeSTmAFZmAelx6+l0D0neD5FqbhNKauvmZD41qyDm9nJIg4nKNLidY5km6ifEEDQ==",
+      "path": "herokupgparser/1.0.2",
+      "hashPath": "herokupgparser.1.0.2.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/2.2.4": {
       "type": "package",

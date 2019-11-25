@@ -46,3 +46,20 @@
 /Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/bin/Debug/netcoreapp2.2/appsettings.json
 /Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
 /Users/cv48lu/Projects/webapi vs spring chapter time/webapi/api/bin/Debug/netcoreapp2.2/global.json
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/Debug/netcoreapp2.2/api.csprojAssemblyReference.cache
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/Debug/netcoreapp2.2/api.RazorAssemblyInfo.cache
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/Debug/netcoreapp2.2/api.RazorAssemblyInfo.cs
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/Debug/netcoreapp2.2/api.AssemblyInfoInputs.cache
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/Debug/netcoreapp2.2/api.AssemblyInfo.cs
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/Debug/netcoreapp2.2/api.dll
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/Debug/netcoreapp2.2/api.pdb
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/bin/Debug/netcoreapp2.2/appsettings.Development.json
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/bin/Debug/netcoreapp2.2/global.json
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/bin/Debug/netcoreapp2.2/api.deps.json
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/bin/Debug/netcoreapp2.2/api.runtimeconfig.json
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/bin/Debug/netcoreapp2.2/api.runtimeconfig.dev.json
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/bin/Debug/netcoreapp2.2/api.dll
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/bin/Debug/netcoreapp2.2/api.pdb
+/Users/cv48lu/Projects/webapi vs spring chapter time individual projects/webapi/api/obj/Debug/netcoreapp2.2/api.RazorTargetAssemblyInfo.cache
