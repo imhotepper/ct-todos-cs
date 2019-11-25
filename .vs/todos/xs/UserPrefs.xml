@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{096EAE16-B84E-45C9-9B8B-011C67D66CC9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Middleware/ErrorHandlerMiddlewareExtension.cs">
+    <Files>
+      <File FileName="Controllers/TodosController.cs" Line="27" Column="63" />
+      <File FileName="Servcies/TodosService.cs" Line="15" Column="1" />
+      <File FileName="Startup.cs" Line="73" Column="1" />
+      <File FileName="Program.cs" />
+      <File FileName="Middleware/ErrorHandlerMiddlewareExtension.cs" Line="41" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="todos" expanded="True">
+            <Node name="api" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Middleware" expanded="True">
+                <Node name="ErrorHandlerMiddlewareExtension.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Servcies" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
